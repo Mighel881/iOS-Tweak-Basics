@@ -1,5 +1,5 @@
-### The Basics of iOS Jailbreak Tweaks
-So, you want to learn how to write iOS jailbreak tweaks. Where do you start? Well you're going to want to know at LEAST the basics of the  Objective-C programming language.
+### The Basics of Writing iOS Jailbreak Tweaks
+So, you want to learn how to write iOS jailbreak tweaks. Where do you start? Well, first and foremost, you're going to want to know at LEAST the basics of the Objective-C programming language. **If you're completely new to Objective-C, go follow [this tutorial](https://github.com/uroboro/Learn-Objective-C-in-24-Days-Clone/blob/master/blog_posts/38.md)**
 In case you don't know what Objective-C is, it is the primary language Apple uses for most of iOS and its apps. Most of iOS's front-end (and maybe some back-end) internals are written in the Objective-C language.
 For most (if not all) cosmetic tweaks, you will want to know how to use and interact with UIKit as well. So the TL;DR would be, know Objective-C and some basic UIKit.
 
@@ -16,7 +16,7 @@ Let's look at this example tweak here. In this snippet we are changing the backg
 }
 %end
 ```
-First, let's look at the `%hook` directive. This basically says that we want to hook the class with the name described after. If you wanted to hook another specific class, say "SomeView", you would write `%hook SomeView`. Easy, right?
+First, let's look at the `%hook` directive. This basically says that we want to hook the class with the class name described after. If you wanted to hook another specific class, say "SomeView", you would write `%hook SomeView`. Easy, right?
 
 Now let's examine the method(s) that we want to "override", or hook **in the class that we've already hooked**. In this example, we're hooking the background color setter method for the UIView class. The arguments **must** be listed so Objective-C knows exactly which method to modify.
 
