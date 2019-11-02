@@ -18,4 +18,4 @@ Let's look at this example tweak here. In this snippet we are changing the backg
 ```
 First, let's look at the `%hook` directive. This basically says that we want to hook the class with the name described after. If you wanted to hook another specific class, say "SomeView", you would write `%hook SomeView`. Easy, right?
 
-Now let's examine the methods that we want to "override", or hook *in the class that we've already hooked*.
+Now let's examine the method(s) that we want to "override", or hook **in the class that we've already hooked**. In this example, we're hooking the background color setter method for the UIView class. The arguments **must** be listed so Objective-C knows exactly which method to modify.
