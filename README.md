@@ -1,7 +1,9 @@
 ### The Basics of Writing iOS Jailbreak Tweaks
-So, you want to learn how to write iOS jailbreak tweaks. Where do you start? Well, first and foremost, you're going to want to know at LEAST the basics of the Objective-C programming language. **If you're completely new to Objective-C, go follow [this tutorial](https://github.com/uroboro/Learn-Objective-C-in-24-Days-Clone/blob/master/blog_posts/38.md)**
-In case you don't know what Objective-C is, it is the primary language Apple uses for most of iOS and its apps. Most of iOS's front-end (and maybe some back-end) internals are written in the Objective-C language.
-For most (if not all) cosmetic tweaks, you will want to know how to use and interact with UIKit as well. So the TL;DR would be, know Objective-C and some basic UIKit.
+So, you want to learn how to write iOS jailbreak tweaks. Where do you start? Well, first and foremost, you're going to want to know at LEAST the basics of the Objective-C programming language. In case you don't know what Objective-C is, it is the primary language Apple uses for most of iOS and its apps. Most of iOS's front-end (and maybe some back-end) internals are written in the Objective-C language.
+
+**If you're completely new to Objective-C, go follow [this tutorial](https://github.com/uroboro/Learn-Objective-C-in-24-Days-Clone/blob/master/blog_posts/38.md)**
+
+Now assuming you know Objective-C, for most (if not all) cosmetic tweaks, you will want to know how to use and interact with UIKit as well. So the TL;DR would be, know Objective-C and some basic UIKit.
 
 Great! Assuming you've made it this far, let's get into the basics of what tweaks are and how to write them. If you're reading this, i'm sure you know what tweaks are; but, we're going to examine exactly what they do and how they work.
 Tweaks modify methods, properties, ivars, etc. of specific classes to achieve a desired outcome. Essentially they just run extra code at runtime to modify iOS. Tweaks utilize a runtime code injection system (such as substrate or substitute) to achieve this outcome.
