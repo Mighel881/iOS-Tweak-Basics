@@ -8,7 +8,7 @@ Tweaks modify methods, properties, ivars, etc. of specific classes to achieve a 
 
 Let's look at a basic tweak; later, we will create an example tweak, but let's look at the basic structure of a tweak first. We will be using Theos (which utilizes the LOGOS syntax directives) to make writing tweaks significantly easier.
 
-Let's look at this example tweak here. In this snippet we are changing the background color of all UIView objects with the given filter to be green.
+Let's look at this example tweak here. In this snippet we are changing the background color of all UIView objects loaded in a specific process (we will discuss this later) to be green.
 ```
 %hook UIView
 -(void)setBackgroundColor:(UIColor *)someColor {
@@ -16,3 +16,6 @@ Let's look at this example tweak here. In this snippet we are changing the backg
 }
 %end
 ```
+First, let's look at the `%hook` directive. This basically says that we want to hook the class with the name described after. If you wanted to hook another specific class, say "SomeView", you would write `%hook SomeView`. Easy, right?
+
+Now let's examine the methods that we want to "override", or hook *in the class that we've already hooked*.
